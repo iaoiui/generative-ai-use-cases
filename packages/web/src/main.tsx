@@ -28,6 +28,7 @@ import TranscribePage from './pages/TranscribePage';
 import AgentChatPage from './pages/AgentChatPage.tsx';
 import FlowChatPage from './pages/FlowChatPage';
 import VoiceChatPage from './pages/VoiceChatPage';
+import AmazonQDeveloperPage from './pages/AmazonQDeveloperPage';
 import { MODELS } from './hooks/useModel';
 import { Authenticator } from '@aws-amplify/ui-react';
 import UseCaseBuilderEditPage from './pages/useCaseBuilder/UseCaseBuilderEditPage.tsx';
@@ -80,6 +81,10 @@ const routes: RouteObject[] = [
   {
     path: '/share/:shareId',
     element: <SharedChatPage />,
+  },
+  {
+    path: '/amazon-q-developer',
+    element: <AmazonQDeveloperPage />,
   },
   enabled('generate')
     ? {

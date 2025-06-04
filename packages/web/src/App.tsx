@@ -21,6 +21,7 @@ import {
   PiMagicWand,
   PiMicrophoneBold,
   PiTreeStructure,
+  PiCodeBlock,
 } from 'react-icons/pi';
 import { Outlet } from 'react-router-dom';
 import Drawer, { ItemProps } from './components/Drawer';
@@ -81,6 +82,12 @@ const App: React.FC = () => {
       to: '/setting',
       icon: <PiGear />,
       display: 'none' as const,
+    },
+    {
+      label: 'Amazon Q Developer',
+      to: '/amazon-q-developer',
+      icon: <PiCodeBlock />,
+      display: 'usecase' as const,
     },
     {
       label: t('navigation.chat'),
